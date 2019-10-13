@@ -50,7 +50,7 @@ public class FlightRepositoryIntegrationTest {
 	}
 
 	@Test
-	public void save_FlightReturnedByIdOfSavedFlight() {
+	public void save_FlightSavedAndReturnedById() {
 		flightRepository.save(flight);
 		Optional<Flight> found = flightRepository.findById(flight.getId());
 		assertEquals(flight, found.get());
