@@ -29,12 +29,17 @@ public class FlightRepositoryIntegrationTest {
 	@Autowired
 	private FlightRepository flightRepository;
 	
-	private Flight flight = new Flight(
-			"TestCompany",
-			LocalDateTime.of(2019, 05, 05, 10, 0, 5),
-			LocalDateTime.of(2019, 05, 05, 10, 0, 5),
-			LocalDateTime.of(2019, 05, 05, 11, 0, 0)
-	);
+	private Flight flight ;
+	
+	@Before
+	public void SetUp() {
+		flight = new Flight(
+				"TestCompany",
+				LocalDateTime.of(2019, 05, 05, 10, 0, 5),
+				LocalDateTime.of(2019, 05, 05, 10, 0, 5),
+				LocalDateTime.of(2019, 05, 05, 11, 0, 0)
+		);
+	}
 	
 	@Test
 	public void findById_FlightReturnedByIdOfExistingFlight() {
