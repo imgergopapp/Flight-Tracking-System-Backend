@@ -25,12 +25,6 @@ public class Flight {
 		super();
 	}
 
-	/**
-	 * @param company
-	 * @param estimatedDeparture
-	 * @param departure
-	 * @param arrival
-	 */
 	public Flight(String company, LocalDateTime estimatedDeparture, LocalDateTime departure, LocalDateTime arrival) {
 		super();
 		this.company = company;
@@ -39,13 +33,6 @@ public class Flight {
 		this.arrival = arrival;
 	}
 
-	/**
-	 * @param id
-	 * @param company
-	 * @param estimatedDeparture
-	 * @param departure
-	 * @param arrival
-	 */
 	public Flight(int id, String company, LocalDateTime estimatedDeparture, LocalDateTime departure,
 			LocalDateTime arrival) {
 		super();
@@ -56,72 +43,42 @@ public class Flight {
 		this.arrival = arrival;
 	}
 
-	/**
-	 * @return the id
-	 */
 	public int getId() {
 		return id;
 	}
 
-	/**
-	 * @param id the id to set
-	 */
 	public void setId(int id) {
 		this.id = id;
 	}
 
-	/**
-	 * @return the company
-	 */
 	public String getCompany() {
 		return company;
 	}
 
-	/**
-	 * @param company the company to set
-	 */
 	public void setCompany(String company) {
 		this.company = company;
 	}
 
-	/**
-	 * @return the estimatedDeparture
-	 */
 	public LocalDateTime getEstimatedDeparture() {
 		return estimatedDeparture;
 	}
 
-	/**
-	 * @param estimatedDeparture the estimatedDeparture to set
-	 */
 	public void setEstimatedDeparture(LocalDateTime estimatedDeparture) {
 		this.estimatedDeparture = estimatedDeparture;
 	}
 
-	/**
-	 * @return the departure
-	 */
 	public LocalDateTime getDeparture() {
 		return departure;
 	}
 
-	/**
-	 * @param departure the departure to set
-	 */
 	public void setDeparture(LocalDateTime departure) {
 		this.departure = departure;
 	}
 
-	/**
-	 * @return the arrival
-	 */
 	public LocalDateTime getArrival() {
 		return arrival;
 	}
 
-	/**
-	 * @param arrival the arrival to set
-	 */
 	public void setArrival(LocalDateTime arrival) {
 		this.arrival = arrival;
 	}
