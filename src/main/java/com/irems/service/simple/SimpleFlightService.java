@@ -4,11 +4,13 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.irems.entity.Flight;
 import com.irems.repository.FlightRepository;
 import com.irems.service.FlightService;
 
+@Service
 public class SimpleFlightService implements FlightService {
 
 	@Autowired
